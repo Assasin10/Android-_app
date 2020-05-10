@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".LOGIN">
+
+    <Button
+        android:id="@+id/view_guests"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/round_button"
+        android:onClick="view_guests_execute"
+        android:text="View "
+
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_guests"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="130dp"
+        android:background="@drawable/round_button"
+        android:onClick="add_guest_execute"
+        android:text="Add"
+        android:textAllCaps="false"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="379dp"
+        android:layout_height="481dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="246dp"
+        android:layout_marginBottom="4dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollHorizontally="true"
+        android:scrollbars="vertical"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/view_guests"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/delete_guest"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/customer_register"
+        android:onClick="remove_guest_execute"
+        android:text="Check out"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/view_guests"
+        app:layout_constraintTop_toBottomOf="@+id/view_guests" />
+
+    <EditText
+        android:id="@+id/remove_guest_text"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/customer_edit_text"
+        android:ems="10"
+        android:hint="Room No"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        app:layout_constraintStart_toStartOf="@+id/add_guests"
+        app:layout_constraintTop_toBottomOf="@+id/add_guests" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Click to Add or view Guests"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/add_guests" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter Room No to delete"
+        android:textColor="#ffffff"
+        android:textSize="13dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/remove_guest_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
